@@ -1,0 +1,186 @@
+body {
+  font-family: "Rethink Sans", "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfefc;
+  color: #2a2a2a;
+}
+
+/* Шапка */
+header {
+  background: #e8f5e9;
+  padding: 28px;
+  text-align: center;
+  border-bottom: 2px solid #c8e6c9;
+}
+
+header h1 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+
+/* Зображення */
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 40px 20px;
+}
+
+.images img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  border: 2px solid #c8e6c9;
+}
+
+/* Таблиця */
+.schedule {
+  margin: 40px 20px;
+}
+
+.schedule h2 {
+  font-size: 26px;
+  color: #2a2a2a;
+  margin-bottom: 16px;
+}
+
+.schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #e8f5e9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.schedule th, .schedule td {
+  border: 1px solid #c8e6c9;
+  padding: 14px;
+  text-align: center;
+  font-size: 16px;
+  color: #2a2a2a;
+}
+
+.schedule th {
+  background: #dcedc1;
+  font-weight: 500;
+}
+
+.schedule select,
+.schedule input[type="date"] {
+  padding: 6px;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 14px;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+/* Кнопка видалення */
+.delete-btn {
+  padding: 6px 12px;
+  background: #ef9a9a;
+  color: #2a2a2a;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: #e57373;
+}
+
+/* Форма + Поради */
+.form-section {
+  margin: 40px 20px;
+  padding: 28px;
+  background: #e8f5e9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+  display: flex;              /* дві колонки */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Форма ліворуч */
+.form-section form {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form label {
+  font-size: 15px;
+  color: #2a2a2a;
+}
+
+form input, form select {
+  padding: 10px;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 15px;
+}
+
+form button {
+  padding: 12px;
+  background: #a5d6a7;
+  color: #2a2a2a;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #c8e6c9;
+}
+
+/* Поради праворуч */
+.hints {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.hints h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #2a2a2a;
+}
+
+.hints ol {
+  padding-left: 20px;
+}
+
+.hints li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  padding: 24px;
+  background: #e8f5e9;
+  border-top: 1px solid #c8e6c9;
+  font-size: 15px;
+  color: #2a2a2a;
+}
